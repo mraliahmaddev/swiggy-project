@@ -1,0 +1,67 @@
+@import '@flaticon/flaticon-uicons/css/all/all.css';
+
+@import "tailwindcss";
+
+
+
+.filterClass{
+    
+    background:white;
+    padding: 5px 12px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px rgb(229, 229, 229);
+    
+    
+}
+.active {
+    background-color: #e9e9e9;
+    color: black;
+    border: 1px solid;
+}
+.active i {
+    display: block;
+}
+
+.activeNav {
+  color: #FF5200;  /* Change this color to whatever you want when active */
+  font-weight: bold;  /* You can also change the font weight if needed */
+}
+
+.activeNav i {
+  color: #FF5200; /* Color for the icon when active */
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#ffa516);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 4px),#000 0);
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }
+
+
+
+
+  .animate {
+    animation: shimmer 2s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
